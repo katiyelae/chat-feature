@@ -65,3 +65,28 @@
         }
     }
 }
+
+// styling of chat sidebar and chat window (excluding live messages, input, etc)
+.home{
+    background-color: #a7bcff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //main container surrounding sidebar and window
+    .container{
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 65%;
+        height: 80%;
+        display: flex;
+        overflow:hidden;
+
+        .sidebar{
+            flex: 1; 
+            border-right: 1px solid;
+            background-color: #3e3c61;
+        }
+        .chatWindow{flex: 2}
+    }
+}
